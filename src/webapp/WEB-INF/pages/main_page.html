@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MVC-Page</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>User's name</th>
+        <th>User's surname</th>
+        <th>User's age</th>
+    </tr>
+    <tr th:each ="user : ${users}">
+        <td th:utext="${user.name}">...</td>
+        <td th:utext="${user.surname}">...</td>
+        <td th:utext="${user.age}">...</td>
+    </tr>
+</table>
+<form method="POST" action="/users"> </form>
+</body>
+</html>
