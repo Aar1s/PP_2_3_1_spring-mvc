@@ -20,9 +20,9 @@ public class UserDAOImpl implements UserDAO {
         user2.setID(AUTO_ID.getAndIncrement());
         User user3 = new User("Claire","Tonti", 37);
         user3.setID(AUTO_ID.getAndIncrement());
-        users.put(user1.getID(), user1);
-        users.put(user2.getID(), user2);
-        users.put(user3.getID(), user3);
+        users.put(user1.getId(), user1);
+        users.put(user2.getId(), user2);
+        users.put(user3.getId(), user3);
     }
 
     @Override
@@ -33,17 +33,17 @@ public class UserDAOImpl implements UserDAO {
     @Override
     public void add(User user) {
         user.setID(AUTO_ID.getAndIncrement());
-        users.put(user.getID(), user);
+        users.put(user.getId(), user);
     }
 
     @Override
-    public void delete(User user) {
-        users.remove(user.getID());
+    public void delete(int id) {
+        users.remove(id);
     }
 
     @Override
-    public void edit(User user) {
-        users.put(user.getID(), user);
+    public void edit(User user, int id) {
+        users.put(id, user);
     }
 
     @Override

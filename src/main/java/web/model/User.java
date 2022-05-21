@@ -6,7 +6,7 @@ public class User {
     private String surname;
     private int age;
 
-    public int getID() {
+    public int getId() {
         return id;
     }
     public void setID(int id) {

@@ -8,7 +8,6 @@ import web.model.User;
 import web.service.UserService;
 import web.service.UserServiceImpl;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -22,14 +21,18 @@ public class UserController {
     public String index(Model model) {
         List<User> users = userService.getAllUsers();
         model.addAttribute("users", users);
-    return "main_page";
+    return "user/index";
     }
 
-
+    @GetMapping("/{id}")
+    public String show(@PathVariable("id") int id, Model model) {
+        model.addAttribute("user", userService.getById(id));
+        return "user/show";
+    }
 
     @GetMapping("/new")
     public String newUser(@ModelAttribute("user") User user, Model model) {
-        return "new";
+        return "user/new";
     }
 
     @PostMapping()
@@ -39,4 +42,21 @@ public class UserController {
         return "redirect:/users/";
     }
 
+    @GetMapping("/{id}/edit")
+    public String edit(@PathVariable("id") int id, Model model) {
+        model.addAttribute("user", userService.getById(id));
+        return "user/edit";
+    }
+
+    @PatchMapping("/{id}")
+    public String update(@ModelAttribute("user")User user, @PathVariable("id") int id) {
+        userService.edit(user, id);
+        return "redirect:/users/";
+    }
+
+    @DeleteMapping("/{id}")
+    public String delete(@PathVariable("id") int id) {
+        userService.delete(id);
+        return "redirect:/users/";
+    }
 }
