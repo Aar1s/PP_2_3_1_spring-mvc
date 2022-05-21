@@ -1,9 +1,29 @@
 package web.model;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+@Table(name = "Users")
 public class User {
+
     private int id;
+
+    @NotEmpty(message = "Name should not be empty")
+    @Size(min=1, max=30, message = "Name should be from 1 to 30 characters")
     private String name;
+
+    @NotEmpty(message = "Surname should not be empty")
+    @Size(min=1, max=30, message = "Surname should be from 1 to 30 characters")
     private String surname;
+
+    @Min(value = 0, message = "User's Age should be more than 0!")
     private int age;
 
     public int getId() {
