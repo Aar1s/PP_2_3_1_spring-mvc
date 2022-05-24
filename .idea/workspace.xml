@@ -9,13 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="258e9cfb-c82c-4bda-b9b9-51f0fdd8542a" name="Changes" comment="CREATE &amp; READ">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="258e9cfb-c82c-4bda-b9b9-51f0fdd8542a" name="Changes" comment="CREATE &amp; READ &amp; UPDATE &amp; DELETE FIXED">
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/config/DBConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/user/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/user/new.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -66,7 +64,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "spring.configuration.checksum": "3f44780fff9a6f2db4ceed06cb523f9f"
@@ -82,10 +80,14 @@
       <recent name="C:\Users\User\IdeaProjects\Kata_PP\PP_2_3_1_spring-mvc\src\main\java\web\config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\Kata_PP\PP_2_3_1_spring-mvc\src\main\resources" />
+      <recent name="C:\Users\User\IdeaProjects\Kata_PP\PP_2_3_1_spring-mvc\src\main" />
+      <recent name="C:\Users\User\IdeaProjects\Kata_PP\PP_2_3_1_spring-mvc\src\main\java\resources" />
       <recent name="C:\Users\User\IdeaProjects\Kata_PP\PP_2_3_1_spring-mvc\src\webapp\WEB-INF\pages\user" />
       <recent name="C:\Users\User\IdeaProjects\Kata_PP\PP_2_3_1_spring-mvc\src\webapp\WEB-INF\pages" />
-      <recent name="C:\Users\User\IdeaProjects\Kata_PP\PP_2_3_1_spring-mvc" />
-      <recent name="C:\Users\User\IdeaProjects\Kata_PP\PP_2_3_1_spring-mvc\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="web.DAO" />
     </key>
   </component>
   <component name="RunManager">
@@ -100,7 +102,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="c2d85958-24d3-4bba-87a2-1150951b740a" />
+        <option name="BASE_DIRECTORY_NAME" value="ac99ddd9-c7a3-4666-a999-f836b10bdc5b" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -108,7 +110,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="57894" />
+        <option name="DEBUG_PORT" value="61536" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
