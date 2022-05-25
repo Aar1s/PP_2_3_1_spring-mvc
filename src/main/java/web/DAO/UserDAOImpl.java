@@ -22,7 +22,6 @@ public class UserDAOImpl implements UserDAO {
 
     @Override
     @SuppressWarnings("unchecked")
-    @Transactional
     public List<User> getAllUsers() {
         Query query = entityManager.createQuery("from User");
         return query.getResultList();
