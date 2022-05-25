@@ -9,12 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="258e9cfb-c82c-4bda-b9b9-51f0fdd8542a" name="Changes" comment="Pre-Clean">
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/DAO/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/DAO/UserDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/config/DBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/config/DBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/service/UserServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="258e9cfb-c82c-4bda-b9b9-51f0fdd8542a" name="Changes" comment="Second Try" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,7 +192,7 @@
       <workItem from="1653114819294" duration="4341000" />
       <workItem from="1653129983638" duration="1976000" />
       <workItem from="1653452019502" duration="6533000" />
-      <workItem from="1653467110857" duration="305000" />
+      <workItem from="1653467110857" duration="685000" />
     </task>
     <task id="LOCAL-00001" summary="CREATE &amp; READ">
       <created>1653051564115</created>
@@ -220,7 +215,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653458769597</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Second Try">
+      <created>1653467611979</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653467611979</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Second Try">
+      <created>1653467791978</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653467791978</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +251,7 @@
     <MESSAGE value="DAO start" />
     <MESSAGE value="DAO 2" />
     <MESSAGE value="Pre-Clean" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pre-Clean" />
+    <MESSAGE value="Second Try" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Try" />
   </component>
 </project>
