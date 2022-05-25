@@ -10,6 +10,7 @@ import web.model.User;
 import web.service.UserService;
 import web.service.UserServiceImpl;
 
+import javax.persistence.TypedQuery;
 import javax.validation.Valid;
 import java.util.List;
 
@@ -18,30 +19,30 @@ import java.util.List;
 public class UserController {
 
     @Autowired
-    UserServiceImpl userService;
+    UserService userService;
 
     @GetMapping("/")
     public String index(Model model) {
         List<User> users = userService.getAllUsers();
         model.addAttribute("users", users);
-    return "user/index";
+    return "users/index";
     }
 
     @GetMapping("/{id}")
     public String show(@PathVariable("id") int id, Model model) {
         model.addAttribute("user", userService.getById(id));
-        return "user/show";
+        return "users/show";
     }
 
     @GetMapping("/new")
     public String newUser(@ModelAttribute("user") User user, Model model) {
-        return "user/new";
+        return "users/new";
     }
 
     @PostMapping()
     public String create(@ModelAttribute("user") @Valid User user, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
-            return "user/new";
+            return "users/new";
         }
         System.out.println(user.getName());
         userService.add(user);
@@ -51,15 +52,14 @@ public class UserController {
     @GetMapping("/{id}/edit")
     public String edit(@PathVariable("id") int id, Model model) {
         model.addAttribute("user", userService.getById(id));
-        return "user/edit";
+        return "users/edit";
     }
 
     @PatchMapping("/{id}")
     public String update(@ModelAttribute("user") @Valid User user,
-                         BindingResult bindingResult,
-                         @PathVariable("id") int id) {
+                         BindingResult bindingResult, @PathVariable int id) {
         if (bindingResult.hasErrors()) {
-            return "user/edit";
+            return "users/edit";
         }
         userService.edit(user, id);
         return "redirect:/users/";
