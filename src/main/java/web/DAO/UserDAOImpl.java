@@ -1,6 +1,5 @@
 package web.DAO;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import web.model.User;
@@ -8,15 +7,18 @@ import web.model.User;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
-import javax.persistence.TypedQuery;
-import java.util.ArrayList;
 import java.util.List;
 
 @Repository
 public class UserDAOImpl implements UserDAO {
 
-    @PersistenceContext
     private EntityManager entityManager;
+
+    @PersistenceContext
+    public void setEntityManager(EntityManager entityManager) {
+        this.entityManager = entityManager;
+    }
+
 
     @Override
     @SuppressWarnings("unchecked")
@@ -38,11 +40,7 @@ public class UserDAOImpl implements UserDAO {
 
     @Override
     public void edit(User user, int id) {
-        user.setID(id);
-       // entityManager.persist(user);
-        System.out.println(user.getId());
-        System.out.println(id);
-        System.out.println(user.getName());
+        user.setId(id);
         entityManager.merge(user);
     }
 
