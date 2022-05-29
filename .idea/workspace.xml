@@ -9,20 +9,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="258e9cfb-c82c-4bda-b9b9-51f0fdd8542a" name="Changes" comment="Fin">
-      <change afterPath="$PROJECT_DIR$/src/main/java/templates/users/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/templates/users/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/templates/users/new.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/templates/users/show.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/SpringBootRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring.properties" afterDir="false" />
+    <list default="true" id="258e9cfb-c82c-4bda-b9b9-51f0fdd8542a" name="Changes" comment="Boot 0.1">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/users/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/users/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/users/new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/users/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/config/AppInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/AppInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/config/DBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/config/DBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/AppInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/config/DBConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/config/WebConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/users/success_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/users/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/users/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/users/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/users/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/index.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +84,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/User/IdeaProjects/Kata_PP/PP_2_3_1_spring-mvc/src/main/java/templates",
+    "last_opened_file_path": "C:/Users/User/IdeaProjects/Kata_PP/PP_2_3_1_spring-mvc/src/main/resources/templates",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,20 +103,25 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\Kata_PP\PP_2_3_1_spring-mvc\src\main\resources\templates" />
+      <recent name="C:\Users\User\IdeaProjects\Kata_PP\PP_2_3_1_spring-mvc\src\main\java\templates" />
       <recent name="C:\Users\User\IdeaProjects\Kata_PP\PP_2_3_1_spring-mvc\src\main\java\web\config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\Kata_PP\PP_2_3_1_spring-mvc\src" />
+      <recent name="C:\Users\User\IdeaProjects\Kata_PP\PP_2_3_1_spring-mvc\src\webapp" />
       <recent name="C:\Users\User\IdeaProjects\Kata_PP\PP_2_3_1_spring-mvc\src\main\resources" />
       <recent name="C:\Users\User\IdeaProjects\Kata_PP\PP_2_3_1_spring-mvc\src\main" />
       <recent name="C:\Users\User\IdeaProjects\Kata_PP\PP_2_3_1_spring-mvc\src\main\java\resources" />
-      <recent name="C:\Users\User\IdeaProjects\Kata_PP\PP_2_3_1_spring-mvc\src\webapp\WEB-INF\pages\user" />
-      <recent name="C:\Users\User\IdeaProjects\Kata_PP\PP_2_3_1_spring-mvc\src\webapp\WEB-INF\pages" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="web.DAO" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SpringBootRunner">
+    <configuration name="All in generated-requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
+      <method v="2" />
+    </configuration>
     <configuration name="SpringBootRunner" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
       <module name="PP_2_3_1_spring-mvc" />
@@ -213,12 +225,14 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="HTTP Request.All in generated-requests" />
       <item itemvalue="Spring Boot.SpringBootRunner" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.78" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.SpringBootRunner" />
+        <item itemvalue="HTTP Request.All in generated-requests" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +251,7 @@
       <workItem from="1653467110857" duration="1322000" />
       <workItem from="1653547581088" duration="1548000" />
       <workItem from="1653631458850" duration="9113000" />
-      <workItem from="1653819889746" duration="609000" />
+      <workItem from="1653819889746" duration="12439000" />
     </task>
     <task id="LOCAL-00001" summary="CREATE &amp; READ">
       <created>1653051564115</created>
@@ -295,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653572507115</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Boot 0.1">
+      <created>1653820551625</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1653820551625</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +340,7 @@
     <MESSAGE value="Pre-Clean" />
     <MESSAGE value="Second Try" />
     <MESSAGE value="Fin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fin" />
+    <MESSAGE value="Boot 0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Boot 0.1" />
   </component>
 </project>

@@ -55,7 +55,8 @@ public class UserController {
         return "users/edit";
     }
 
-    @PatchMapping("/{id}")
+
+    @PostMapping ("/{id}")
     public String update(@ModelAttribute("user") @Valid User user,
                          BindingResult bindingResult, @PathVariable int id) {
         if (bindingResult.hasErrors()) {
@@ -65,7 +66,7 @@ public class UserController {
         return "redirect:/users/";
     }
 
-    @DeleteMapping("/{id}")
+    @RequestMapping(value = "/{id}",method=RequestMethod.DELETE)//@DeleteMapping("/{id}")
     public String delete(@PathVariable("id") int id) {
         userService.delete(id);
         return "redirect:/users/";
