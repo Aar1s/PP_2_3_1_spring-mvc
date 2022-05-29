@@ -1,6 +1,7 @@
 package web.config;
 
 import org.apache.tomcat.dbcp.dbcp2.BasicDataSource;
+import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -14,10 +15,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import java.util.Properties;
 
-@Configuration
+@SpringBootConfiguration
 @EnableTransactionManagement
 @PropertySource("classpath:db.properties")
-@ComponentScan("web")
 public class DBConfig {
 
     private Environment env;
@@ -45,9 +45,6 @@ public class DBConfig {
         entityManagerFactoryBean.setJpaProperties(hibernateProperties());
         return entityManagerFactoryBean;
     }
-
-
-
     @Bean
     public PlatformTransactionManager platformTransactionManager() {
         JpaTransactionManager transactionManager = new JpaTransactionManager();

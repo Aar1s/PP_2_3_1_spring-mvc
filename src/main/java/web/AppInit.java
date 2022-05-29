@@ -1,11 +1,17 @@
-package web.config;
+package web;
 
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Import;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+import web.config.DBConfig;
+import web.config.WebConfig;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 
+@SpringBootApplication
+@Import({DBConfig.class, WebConfig.class})
 public class AppInit extends AbstractAnnotationConfigDispatcherServletInitializer  {
 
     // Метод, указывающий на класс конфигурации
